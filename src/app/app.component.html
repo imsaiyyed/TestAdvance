@@ -1,21 +1,98 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <!-- This is an header part -->
+    <div class="my-header">
+        <div class = "page-header header-class">
+                <div class="header-div">
+                    <h1>
+                       Dark Script<br>
+                       <small>If you can make it you can crack it..</small>
+                    </h1>
+                    
+                 </div>
+            </div>
+    </div>
+<!-- End of header part -->
 
-<router-outlet></router-outlet>
+
+<!-- Navigation bar -->
+    <div class="row content">
+      <div class="col-sm-3">
+        <nav class="nav flex-column blue lighten-5 py-4">
+          <a class="nav-link" href="#">Menu</a>
+          <a class="nav-link" href="./">Home</a>
+          <a class="nav-link" href="./about">About us</a>
+          <a class="nav-link" href="./contact">Contact  us</a>
+      </nav>
+    </div>
+<!--End of Navigation bar -->
+
+<!-- Router outlet for loading other page -->
+<div class="col-sm-9">
+  <div class="well">
+    <router-outlet></router-outlet>
+  </div>
+  </div>
+</div>
+
+
+<!--Footer started -->
+<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/agency/logo-inverse-140x37.png" alt="" width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x"></a>
+                <p>We are an award-winning creative agency, dedicated to the best result in web design, security, promotion, business consulting, and marketing.</p>
+                <!-- Rights-->
+                <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All Rights Reserved.</span></p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <h5>Contacts</h5>
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>798 South Park Avenue, Jaipur, Raj</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:#">dscript@gmail.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>phones:</dt>
+                <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row no-gutters social-container">
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
+          <div class="col"><a class="social-inner" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+        </div>
+      </footer>
+
+  <!--Footer End -->
+
+</body>
+</html>
+
+
